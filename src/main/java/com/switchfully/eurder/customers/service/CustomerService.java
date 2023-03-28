@@ -6,6 +6,7 @@ import com.switchfully.eurder.customers.exceptions.UnauthorizatedException;
 import com.switchfully.eurder.customers.repository.CustomerRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.Base64;
 import java.util.List;
 import java.util.UUID;
 
@@ -35,7 +36,7 @@ public class CustomerService {
             if (!customer.hasAccessTo(feature)) {
                 throw new UnauthorizatedException(authorization, feature);
             }
-        }catch(Exception e){
+        }catch(CustomerNotFoundException e){
             throw new CustomerNotFoundException(authorization);
         }
     }

@@ -1,5 +1,6 @@
 package com.switchfully.eurder.items.service;
 
+
 import com.switchfully.eurder.items.domain.CreatingItem;
 import com.switchfully.eurder.items.domain.ItemDto;
 import com.switchfully.eurder.items.domain.ItemMapper;
@@ -26,4 +27,15 @@ public class ItemServiceTest {
         //THEN
         Assertions.assertThat(itemsFromRepo).isNotEmpty();
     }
+    /*@Test
+    void givenACreatingItem_WhenCallingServiceAddItemMethod_ThenShouldAddItemToDB(){
+        //GIVEN
+        CreatingItem customerToAdd = new CreatingItem("Sipho", "Nophore", "zooids@gmail.com",
+                new Address("rue deepsea 15", "2050", "Atlantique"), "0544955119");
+        //WHEN
+        ItemDto customerAdded = service.addItem(customerToAdd);
+        //THEN
+        Assertions.assertThat(repo.getAll()).contains(mapper.dtoToItemKeepingId(customerAdded));
+    }*/
+
 }

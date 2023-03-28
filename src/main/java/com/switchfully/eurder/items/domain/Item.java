@@ -1,5 +1,6 @@
 package com.switchfully.eurder.items.domain;
 
+import java.util.Objects;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class Item {
@@ -24,6 +25,19 @@ public class Item {
         this.descritpion = descritpion;
         this.price = price;
         this.amount = amount;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Item item = (Item) o;
+        return amount == item.amount && Objects.equals(id, item.id) && Objects.equals(name, item.name) && Objects.equals(descritpion, item.descritpion) && Objects.equals(price, item.price);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, descritpion, price, amount);
     }
     // region GETTER
 
