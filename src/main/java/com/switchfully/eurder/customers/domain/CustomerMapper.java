@@ -10,26 +10,27 @@ public class CustomerMapper {
         return new CustomerDto(
                 customer.getId(), customer.getFirstName(),
                 customer.getLastName(), customer.getEmail(),
-                customer.getAddress(), customer.getPhoneNumber()
+                customer.getAddress(), customer.getPhoneNumber(),
+                customer.getRole()
         );
     }
     public Customer dtoToCustomer(CustomerDto customerDto){
         return new Customer(
                 customerDto.getFirstName(), customerDto.getLastName(),
                 customerDto.getEmail(), customerDto.getAddress(),
-                customerDto.getPhoneNumber());
+                customerDto.getPhoneNumber(), customerDto.getRole());
     }
     public Customer dtoToCustomerKeepingId(CustomerDto customerDto){
         return new Customer(customerDto.getId(),
                 customerDto.getFirstName(), customerDto.getLastName(),
                 customerDto.getEmail(), customerDto.getAddress(),
-                customerDto.getPhoneNumber());
+                customerDto.getPhoneNumber(), customerDto.getRole());
     }
     public Customer creatingCustomerToCustomer(CreatingCustomer creatingCustomer){
         return new Customer(
                 creatingCustomer.getFirstName(), creatingCustomer.getLastName(),
                 creatingCustomer.getEmail(), creatingCustomer.getAddress(),
-                creatingCustomer.getPhoneNumber()
+                creatingCustomer.getPhoneNumber(), Role.MEMBER
         );
     }
     public List<CustomerDto> listCustomersToListDto(List<Customer> listCustomers){

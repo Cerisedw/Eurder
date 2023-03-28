@@ -2,6 +2,7 @@ package com.switchfully.eurder.customers.repository;
 
 import com.switchfully.eurder.customers.domain.Address;
 import com.switchfully.eurder.customers.domain.Customer;
+import com.switchfully.eurder.customers.domain.Role;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +27,7 @@ public class CustomerRepositoryTest {
     void givenACustomer_WhenCallingRepositoryAddCustomerMethod_ThenNewCustomerShouldBeInDataBase(){
         //GIVEN
         Customer customerToAdd = new Customer("Sipho", "Nophore", "zooids@gmail.com",
-                new Address("rue deepsea 15", "2050", "Atlantique"), "0544955119");
+                new Address("rue deepsea 15", "2050", "Atlantique"), "0544955119", Role.MEMBER);
         //WHEN
         repo.addCustomer(customerToAdd);
         //THEN

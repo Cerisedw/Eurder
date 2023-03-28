@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Repository
 public class CustomerRepository {
@@ -19,5 +20,9 @@ public class CustomerRepository {
     public Customer addCustomer(Customer customer){
         database.getCustomers().add(customer);
         return customer;
+    }
+    public Customer getCustomerById(String id){
+        long longId = Long.parseLong(id);
+        return database.getCustomers().stream().filter(c->c.getId() == longId).findFirst().orElseThrow();
     }
 }

@@ -17,7 +17,7 @@ public class CustomerMapperTest {
     @BeforeEach
     void setup(){
         customer1 = new Customer("Manta", "Ray", "manta-ray@gmail.com",
-                new Address("street c 42", "Namur", "5080"), "0432585228");
+                new Address("street c 42", "Namur", "5080"), "0432585228", Role.MEMBER);
         creatingCustomer1 = new CreatingCustomer("Sipho", "Nophore", "zooids@gmail.com",
                 new Address("rue deepsea 15", "2050", "Atlantique"), "0544955119");
     }
@@ -50,7 +50,7 @@ public class CustomerMapperTest {
     void givenCustomerDtoWithId_WhenCallingDtoToCustomerKeepingId_ThenReturnCustomerWithSameId(){
         //GIVEN
         CustomerDto customerDto = new CustomerDto(54, "Nice", "Death", "deathcorp@gmail.com",
-                new Address("deathstreet 2", "Somewhere", "666"), "55566612");
+                new Address("deathstreet 2", "Somewhere", "666"), "55566612", Role.ADMIN);
         //WHEN
         Customer customerMapped = mapper.dtoToCustomerKeepingId(customerDto);
         //THEN

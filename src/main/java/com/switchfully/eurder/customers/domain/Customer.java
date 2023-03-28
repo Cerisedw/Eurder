@@ -11,22 +11,28 @@ public class Customer {
     private final String email;
     private Address address;
     private String phoneNumber;
+    private Role role;
 
-    public Customer(String firstName, String lastName, String email, Address address, String phoneNumber) {
+    public Customer(String firstName, String lastName, String email, Address address, String phoneNumber, Role role) {
         this.id = counter.incrementAndGet();
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.address = address;
         this.phoneNumber = phoneNumber;
+        this.role = role;
     }
-    public Customer(long id, String firstName, String lastName, String email, Address address, String phoneNumber) {
+    public Customer(long id, String firstName, String lastName, String email, Address address, String phoneNumber, Role role) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.address = address;
         this.phoneNumber = phoneNumber;
+        this.role = role;
+    }
+    public boolean hasAccessTo(Feature feature) {
+        return role.containsFeature(feature);
     }
     @Override
     public boolean equals(Object o) {
@@ -64,6 +70,10 @@ public class Customer {
 
     public String getPhoneNumber() {
         return phoneNumber;
+    }
+
+    public Role getRole() {
+        return role;
     }
     // endregion
 }

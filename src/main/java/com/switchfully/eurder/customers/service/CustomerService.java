@@ -1,13 +1,13 @@
 package com.switchfully.eurder.customers.service;
 
-import com.switchfully.eurder.customers.domain.CreatingCustomer;
-import com.switchfully.eurder.customers.domain.Customer;
-import com.switchfully.eurder.customers.domain.CustomerDto;
-import com.switchfully.eurder.customers.domain.CustomerMapper;
+import com.switchfully.eurder.customers.domain.*;
+import com.switchfully.eurder.customers.exceptions.CustomerNotFoundException;
+import com.switchfully.eurder.customers.exceptions.UnauthorizatedException;
 import com.switchfully.eurder.customers.repository.CustomerRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
 
 @Service
 public class CustomerService {
@@ -25,4 +25,19 @@ public class CustomerService {
         Customer customerAdded = repo.addCustomer(mapper.creatingCustomerToCustomer(creatingCustomer));
         return mapper.customerToDto(customerAdded);
     }
+    public CustomerDto getCustomerById(String id){
+        return mapper.customerToDto(repo.getCustomerById(id));
+    }
+
+    public void validateAuthorization(String authorization, Feature feature) {
+        try {
+            Customer customer = repo.getCustomerById(authorization);
+            if (!customer.hasAccessTo(feature)) {
+                throw new UnauthorizatedException(authorization, feature);
+            }
+        }catch(Exception e){
+            throw new CustomerNotFoundException(authorization);
+        }
+    }
+
 }
