@@ -16,4 +16,8 @@ public class CustomerRepository {
     public List<Customer> getAll(){
         return database.getCustomers();
     }
+    public Customer addCustomer(Customer customer){
+        database.getCustomers().add(customer);
+        return customer;
+    }
 }

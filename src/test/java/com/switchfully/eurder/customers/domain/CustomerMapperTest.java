@@ -13,10 +13,13 @@ public class CustomerMapperTest {
     @Autowired
     private CustomerMapper mapper;
     private Customer customer1;
+    private CreatingCustomer creatingCustomer1;
     @BeforeEach
     void setup(){
         customer1 = new Customer("Manta", "Ray", "manta-ray@gmail.com",
                 new Address("street c 42", "Namur", "5080"), "0432585228");
+        creatingCustomer1 = new CreatingCustomer("Sipho", "Nophore", "zooids@gmail.com",
+                new Address("rue deepsea 15", "2050", "Atlantique"), "0544955119");
     }
     @Test
     void givenCustomer_WhenCallingCustomerToDTOMethod_ThenReturnCustomerDtoWithSameData(){
@@ -30,5 +33,27 @@ public class CustomerMapperTest {
         assertEquals(customer1.getEmail(), customerDto.getEmail());
         assertEquals(customer1.getAddress(), customerDto.getAddress());
         assertEquals(customer1.getPhoneNumber(), customerDto.getPhoneNumber());
+    }
+    @Test
+    void givenCreatingCustomer_WhenCallingCreatingCustomerToCustomerMethod_ThenReturnCustomerWithSameData(){
+        //WHEN
+        Customer customerToTest = mapper.creatingCustomerToCustomer(creatingCustomer1);
+        //THEN
+        Assertions.assertThat(customerToTest).isInstanceOf(Customer.class);
+        assertEquals(creatingCustomer1.getFirstName(), customerToTest.getFirstName());
+        assertEquals(creatingCustomer1.getLastName(), customerToTest.getLastName());
+        assertEquals(creatingCustomer1.getEmail(), customerToTest.getEmail());
+        assertEquals(creatingCustomer1.getAddress(), customerToTest.getAddress());
+        assertEquals(creatingCustomer1.getPhoneNumber(), customerToTest.getPhoneNumber());
+    }
+    @Test
+    void givenCustomerDtoWithId_WhenCallingDtoToCustomerKeepingId_ThenReturnCustomerWithSameId(){
+        //GIVEN
+        CustomerDto customerDto = new CustomerDto(54, "Nice", "Death", "deathcorp@gmail.com",
+                new Address("deathstreet 2", "Somewhere", "666"), "55566612");
+        //WHEN
+        Customer customerMapped = mapper.dtoToCustomerKeepingId(customerDto);
+        //THEN
+        assertEquals(customerDto.getId(), customerMapped.getId());
     }
 }

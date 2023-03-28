@@ -19,6 +19,19 @@ public class CustomerMapper {
                 customerDto.getEmail(), customerDto.getAddress(),
                 customerDto.getPhoneNumber());
     }
+    public Customer dtoToCustomerKeepingId(CustomerDto customerDto){
+        return new Customer(customerDto.getId(),
+                customerDto.getFirstName(), customerDto.getLastName(),
+                customerDto.getEmail(), customerDto.getAddress(),
+                customerDto.getPhoneNumber());
+    }
+    public Customer creatingCustomerToCustomer(CreatingCustomer creatingCustomer){
+        return new Customer(
+                creatingCustomer.getFirstName(), creatingCustomer.getLastName(),
+                creatingCustomer.getEmail(), creatingCustomer.getAddress(),
+                creatingCustomer.getPhoneNumber()
+        );
+    }
     public List<CustomerDto> listCustomersToListDto(List<Customer> listCustomers){
         return listCustomers.stream()
                 .map(this::customerToDto)

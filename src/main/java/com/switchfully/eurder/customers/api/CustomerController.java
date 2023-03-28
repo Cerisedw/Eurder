@@ -1,12 +1,10 @@
 package com.switchfully.eurder.customers.api;
 
+import com.switchfully.eurder.customers.domain.CreatingCustomer;
 import com.switchfully.eurder.customers.domain.CustomerDto;
 import com.switchfully.eurder.customers.service.CustomerService;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,5 +21,10 @@ public class CustomerController {
     @ResponseStatus(HttpStatus.OK)
     public List<CustomerDto> getCustomers(){
         return service.getAllCustomers();
+    }
+    @PostMapping(consumes = "application/json", produces = "application/json")
+    @ResponseStatus(HttpStatus.CREATED)
+    public CustomerDto addCustomer(@RequestBody CreatingCustomer creatingCustomer){
+        return service.addCustomer(creatingCustomer);
     }
 }
