@@ -9,14 +9,16 @@ public class CustomerDto {
     private final String email;
     private Address address;
     private String phoneNumber;
+    private Role role;
 
-    public CustomerDto(long id, String firstName, String lastName, String email, Address address, String phoneNumber) {
+    public CustomerDto(long id, String firstName, String lastName, String email, Address address, String phoneNumber, Role role) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.address = address;
         this.phoneNumber = phoneNumber;
+        this.role = role;
     }
 
     @Override
@@ -55,6 +57,10 @@ public class CustomerDto {
 
     public String getPhoneNumber() {
         return phoneNumber;
+    }
+
+    public Role getRole() {
+        return role;
     }
     // endregion
 

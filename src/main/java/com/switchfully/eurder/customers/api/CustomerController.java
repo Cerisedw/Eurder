@@ -27,4 +27,9 @@ public class CustomerController {
     public CustomerDto addCustomer(@RequestBody CreatingCustomer creatingCustomer){
         return service.addCustomer(creatingCustomer);
     }
+    @GetMapping(path = "/{id}", produces = "application/json")
+    @ResponseStatus(HttpStatus.OK)
+    public CustomerDto getCustomerById(@PathVariable String id){
+        return service.getCustomerById(id);
+    }
 }
