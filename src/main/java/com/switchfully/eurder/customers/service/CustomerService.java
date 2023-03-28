@@ -1,5 +1,7 @@
 package com.switchfully.eurder.customers.service;
 
+import com.switchfully.eurder.customers.domain.CreatingCustomer;
+import com.switchfully.eurder.customers.domain.Customer;
 import com.switchfully.eurder.customers.domain.CustomerDto;
 import com.switchfully.eurder.customers.domain.CustomerMapper;
 import com.switchfully.eurder.customers.repository.CustomerRepository;
@@ -18,5 +20,9 @@ public class CustomerService {
     }
     public List<CustomerDto> getAllCustomers(){
         return mapper.listCustomersToListDto(repo.getAll());
+    }
+    public CustomerDto addCustomer(CreatingCustomer creatingCustomer){
+        Customer customerAdded = repo.addCustomer(mapper.creatingCustomerToCustomer(creatingCustomer));
+        return mapper.customerToDto(customerAdded);
     }
 }
