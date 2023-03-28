@@ -17,4 +17,9 @@ public class ItemRepository {
     public List<Item> getAll(){
         return database.getItems();
     }
+    public Item addItem(Item item){
+        database.getItems().add(item);
+        return item;
+    }
+
 }

@@ -1,6 +1,7 @@
 package com.switchfully.eurder.items.service;
 
-import com.switchfully.eurder.customers.domain.CustomerDto;
+import com.switchfully.eurder.items.domain.CreatingItem;
+import com.switchfully.eurder.items.domain.Item;
 import com.switchfully.eurder.items.domain.ItemDto;
 import com.switchfully.eurder.items.repository.ItemRepository;
 import com.switchfully.eurder.items.domain.ItemMapper;
@@ -20,5 +21,10 @@ public class ItemService {
     public List<ItemDto> getAllItems(){
         return mapper.listItemsToListDto(repo.getAll());
     }
+    public ItemDto addItem(CreatingItem creatingItem){
+        Item itemAdded = repo.addItem(mapper.creatingItemToItem(creatingItem));
+        return mapper.itemToDto(itemAdded);
+    }
+
 
 }
