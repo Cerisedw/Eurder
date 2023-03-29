@@ -4,7 +4,7 @@ import java.util.List;
 
 public enum Role {
     MEMBER(List.of()),
-    ADMIN(List.of(Feature.ADD_ITEM));
+    ADMIN(List.of(Feature.ADD_ITEM, Feature.UPDATE_ITEM));
 
     private final List<Feature> featureList;
 

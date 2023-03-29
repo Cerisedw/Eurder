@@ -1,13 +1,17 @@
 package com.switchfully.eurder.customers.api;
 
 import com.switchfully.eurder.customers.domain.*;
+import com.switchfully.eurder.customers.exceptions.CustomerNotFoundException;
 import com.switchfully.eurder.customers.repository.CustomerDatabase;
+import com.switchfully.eurder.items.exceptions.ItemNotFoundException;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
+
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 @SpringBootTest
 public class CustomerControllerTest {
@@ -36,4 +40,22 @@ public class CustomerControllerTest {
         //THEN
         Assertions.assertThat(database.getCustomers()).contains(mapper.dtoToCustomerKeepingId(customerAdded));
     }
+    @Test
+    void givenId_WhenGetCustomerByIdCall_ThenReturnedCustomerDto(){
+        //GIVEN
+        String id = "1";
+        //WHEN
+        CustomerDto customerReturned = controller.getCustomerById(id);
+        Customer customerFromDB = database.getCustomers().stream()
+                .filter(c->c.getId() == Long.parseLong(id)).findFirst().orElseThrow();
+        //THEN
+        Assertions.assertThat(customerReturned).isNotNull();
+        Assertions.assertThat(customerReturned).isEqualTo(mapper.customerToDto(customerFromDB));
+    }
+    @Test
+    void CustomerNotFoundExceptionThrows(){
+        assertThatThrownBy(() -> controller.getCustomerById("15545658"))
+                .isInstanceOf(CustomerNotFoundException.class);
+    }
+
 }

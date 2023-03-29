@@ -34,4 +34,13 @@ public class CustomerServiceTest {
         //THEN
         Assertions.assertThat(repo.getAll()).contains(mapper.dtoToCustomerKeepingId(customerAdded));
     }
+    @Test
+    void givenAnId_WhenCallingServiceGetCustomerById_ThenShouldReturnedNotNull(){
+        //Given
+        String id = "1";
+        //WHEN
+        CustomerDto customerReturned = service.getCustomerById(id);
+        //THEN
+        Assertions.assertThat(customerReturned).isNotNull();
+    }
 }

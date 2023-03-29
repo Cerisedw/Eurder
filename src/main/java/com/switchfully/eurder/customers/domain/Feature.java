@@ -1,5 +1,5 @@
 package com.switchfully.eurder.customers.domain;
 
 public enum Feature {
-    ADD_ITEM
+    ADD_ITEM, UPDATE_ITEM
 }

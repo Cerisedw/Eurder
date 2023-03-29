@@ -34,6 +34,20 @@ public class ItemController {
         customerService.validateAuthorization(authorizationDecoded, Feature.ADD_ITEM);
         return service.addItem(creatingItem);
     }
+    @GetMapping(path = "/{id}", produces = "application/json")
+    @ResponseStatus(HttpStatus.OK)
+    public ItemDto getItemById(@PathVariable String id){
+        return service.getItemById(id);
+    }
+
+    @PutMapping(consumes = "application/json", produces = "application/json", path = "/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public ItemDto updateItem(@RequestBody CreatingItem updateItem, @PathVariable String id, @RequestHeader String authorization){
+        String authorizationDecoded = decode(authorization);
+        customerService.validateAuthorization(authorizationDecoded, Feature.UPDATE_ITEM);
+        return service.updateItem(id, updateItem);
+    }
+
     private String decode(String authorization) {
         String decodedAuthorization = new String(Base64.getDecoder().decode(authorization.substring("Basic ".length())));
         return decodedAuthorization.substring(0, decodedAuthorization.length() - 1);
