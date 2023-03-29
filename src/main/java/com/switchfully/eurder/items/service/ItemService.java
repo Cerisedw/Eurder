@@ -26,5 +26,14 @@ public class ItemService {
         return mapper.itemToDto(itemAdded);
     }
 
-
+    public ItemDto getItemById(String id) {
+        return mapper.itemToDto(repo.getItemById(id));
+    }
+    public ItemDto updateItem(String id, CreatingItem creatingItem){
+        // Item itemNotChanged = repo.getItemById(id);
+        Item itemChanged = new Item(Long.parseLong(id), creatingItem.getName(),
+                creatingItem.getDescritpion(), creatingItem.getPrice(),
+                creatingItem.getAmount());
+        return mapper.itemToDto(repo.updateItem(id, itemChanged));
+    }
 }

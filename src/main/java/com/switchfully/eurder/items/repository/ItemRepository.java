@@ -1,8 +1,7 @@
 package com.switchfully.eurder.items.repository;
 
-import com.switchfully.eurder.customers.domain.Customer;
-import com.switchfully.eurder.customers.repository.CustomerDatabase;
 import com.switchfully.eurder.items.domain.Item;
+import com.switchfully.eurder.items.exceptions.ItemNotFoundException;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -19,6 +18,17 @@ public class ItemRepository {
     }
     public Item addItem(Item item){
         database.getItems().add(item);
+        return item;
+    }
+    public Item getItemById(String id){
+        long longId = Long.parseLong(id);
+        return database.getItems().stream().filter(c->c.getId() == longId).findFirst().orElseThrow(
+                () -> new ItemNotFoundException("Item with " + id + " id doesn't exist")
+        );
+    }
+    public Item updateItem(String id, Item item){
+        int index = database.getItems().indexOf(getItemById(id));
+        database.getItems().set(index, item);
         return item;
     }
 

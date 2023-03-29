@@ -1,6 +1,7 @@
 package com.switchfully.eurder.customers.repository;
 
 import com.switchfully.eurder.customers.domain.Customer;
+import com.switchfully.eurder.customers.exceptions.CustomerNotFoundException;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -23,6 +24,8 @@ public class CustomerRepository {
     }
     public Customer getCustomerById(String id){
         long longId = Long.parseLong(id);
-        return database.getCustomers().stream().filter(c->c.getId() == longId).findFirst().orElseThrow();
+        return database.getCustomers().stream().filter(c->c.getId() == longId).findFirst().orElseThrow(
+                () -> new CustomerNotFoundException("Customer with " + id + " id doesn't exist")
+        );
     }
 }

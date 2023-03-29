@@ -33,4 +33,24 @@ public class CustomerRepositoryTest {
         //THEN
         Assertions.assertThat(database.getCustomers()).contains(customerToAdd);
     }
+    @Test
+    void givenAnId_WhenCallingRepositoryGetCustomerById_ThenShouldReturnNotNullCustomer(){
+        //GIVEN
+        String id = "1";
+        //WHEN
+        Customer customerReturnedByRepo = repo.getCustomerById(id);
+        //THEN
+        Assertions.assertThat(customerReturnedByRepo).isNotNull();
+    }
+    @Test
+    void givenAnId_WhenCallingRepositoryGetCustomerById_ThenShouldReturnSameCustomerAsInDB(){
+        //GIVEN
+        String id = "1";
+        //WHEN
+        Customer customerReturnedByRepo = repo.getCustomerById(id);
+        Customer customerReturnedByDB = database.getCustomers().stream()
+                .filter(c->c.getId() == Long.parseLong(id)).findFirst().orElseThrow();
+        //THEN
+        Assertions.assertThat(customerReturnedByDB).isEqualTo(customerReturnedByRepo);
+    }
 }
