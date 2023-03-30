@@ -11,7 +11,7 @@ public class ItemGroup {
     private final Price priceOfItem;
     private final LocalDate shippingDate;
 
-    public ItemGroup(Item item, LocalDate shippingDate) {
+    public ItemGroup(Item item) {
         this.itemId = item.getId();
         this.amount = item.getAmount();
         this.priceOfItem = item.getPrice();
