@@ -5,6 +5,7 @@ import com.switchfully.eurder.customers.exceptions.CustomerNotFoundException;
 import com.switchfully.eurder.customers.repository.CustomerDatabase;
 import com.switchfully.eurder.items.exceptions.ItemNotFoundException;
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -21,12 +22,17 @@ public class CustomerControllerTest {
     private CustomerDatabase database;
     @Autowired
     private CustomerMapper mapper;
+    private String adminIdBasic;
+    @BeforeEach
+    void setup(){
+        adminIdBasic = "Basic MT0=";
+    }
     @Test
     void whenGetAllCustomersCall_ThenReturnListOfCustomersDto(){
         //GIVEN
         List<CustomerDto> customersFromDB = mapper.listCustomersToListDto(database.getCustomers());
         //WHEN
-        List<CustomerDto> customersFromController = controller.getCustomers();
+        List<CustomerDto> customersFromController = controller.getCustomers(adminIdBasic);
         //THEN
         Assertions.assertThat(customersFromDB).hasSameElementsAs(customersFromController);
     }
@@ -45,7 +51,7 @@ public class CustomerControllerTest {
         //GIVEN
         String id = "1";
         //WHEN
-        CustomerDto customerReturned = controller.getCustomerById(id);
+        CustomerDto customerReturned = controller.getCustomerById(id, adminIdBasic);
         Customer customerFromDB = database.getCustomers().stream()
                 .filter(c->c.getId() == Long.parseLong(id)).findFirst().orElseThrow();
         //THEN
@@ -54,7 +60,7 @@ public class CustomerControllerTest {
     }
     @Test
     void CustomerNotFoundExceptionThrows(){
-        assertThatThrownBy(() -> controller.getCustomerById("15545658"))
+        assertThatThrownBy(() -> controller.getCustomerById("15545658", adminIdBasic))
                 .isInstanceOf(CustomerNotFoundException.class);
     }
 
