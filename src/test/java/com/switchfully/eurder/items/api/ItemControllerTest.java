@@ -8,6 +8,7 @@ import com.switchfully.eurder.items.exceptions.ItemNotFoundException;
 import com.switchfully.eurder.items.repository.ItemDatabase;
 import com.switchfully.eurder.customers.exceptions.UnauthorizatedException;
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,11 @@ public class ItemControllerTest {
     private ItemMapper mapper;
     @Autowired
     private CustomerService customerService;
+    private String adminIdBasic;
+    @BeforeEach
+    void setup(){
+        adminIdBasic = "Basic MT0=";
+    }
     @Test
     void whenGetAllItemsCall_ThenReturnListOfItemsDto(){
         //GIVEN
@@ -43,7 +49,7 @@ public class ItemControllerTest {
         CreatingItem creatingItem = new CreatingItem("Something", "Something description",
                 new Price(155, Currency.YEN), 1);
         //WHEN
-        ItemDto customerAdded = controller.addItem(creatingItem, "Basic MT0=");
+        ItemDto customerAdded = controller.addItem(creatingItem, adminIdBasic);
         //THEN
         Assertions.assertThat(database.getItems()).contains(mapper.dtoToItemKeepingId(customerAdded));
     }
@@ -63,11 +69,10 @@ public class ItemControllerTest {
     void givenIdAndCreatingItemAndIdAdmin_WhenUpdateItemCalled_ThenReturnedItemDtoUpdated(){
         //GIVEN
         String id = "1";
-        String idAdminCustomer = "Basic MT0=";
         CreatingItem itemUpdate = new CreatingItem( "Something", "Somthing description",
                 new Price(155, Currency.YEN), 1);
         //WHEN
-        ItemDto itemReturnedAfterUpdate = controller.updateItem(itemUpdate, id, idAdminCustomer);
+        ItemDto itemReturnedAfterUpdate = controller.updateItem(itemUpdate, id, adminIdBasic);
         //THEN
         assertEquals(Long.parseLong(id), itemReturnedAfterUpdate.getId());
         assertEquals(itemUpdate.getName(), itemReturnedAfterUpdate.getName());
