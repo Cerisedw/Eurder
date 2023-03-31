@@ -1,17 +1,16 @@
 package com.switchfully.eurder.orders.domain;
 
-import com.switchfully.eurder.items.domain.Currency;
 import com.switchfully.eurder.items.domain.Price;
+import com.switchfully.eurder.orders.domain.itemGroups.ItemGroupDto;
 
 import java.util.List;
 
 public class OrderDto {
     private final Long id;
     private final long idUser;
-    private final List<ItemGroup> itemGroupList;
+    private final List<ItemGroupDto> itemGroupList;
     private final Price totalToPay;
-
-    public OrderDto(Long id, long idUser, List<ItemGroup> itemGroupList, Price totalToPay) {
+    public OrderDto(Long id, long idUser, List<ItemGroupDto> itemGroupList, Price totalToPay) {
         this.id = id;
         this.idUser = idUser;
         this.itemGroupList = itemGroupList;
@@ -26,7 +25,7 @@ public class OrderDto {
         return idUser;
     }
 
-    public List<ItemGroup> getItemGroupList() {
+    public List<ItemGroupDto> getItemGroupList() {
         return itemGroupList;
     }
 

@@ -7,23 +7,18 @@ import java.util.List;
 
 public class CreatingOrder {
 
-    private final long idUser;
-    private final List<ItemGroup> itemGroupList;
+    private final List<String> itemIdList;
     private final Currency currency;
 
-    public CreatingOrder(long idUser, List<ItemGroup> itemGroupList, Currency currency) {
-        this.idUser = idUser;
-        this.itemGroupList = itemGroupList;
+    public CreatingOrder(List<String> itemIdList, Currency currency) {
+        this.itemIdList = itemIdList;
         this.currency = currency;
     }
     // region GETTER
 
-    public long getIdUser() {
-        return idUser;
-    }
 
-    public List<ItemGroup> getItemGroupList() {
-        return itemGroupList;
+    public List<String> getItemIdList() {
+        return itemIdList;
     }
 
     public Currency getCurrency() {

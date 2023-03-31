@@ -1,9 +1,8 @@
 package com.switchfully.eurder.orders.repository;
 
 import com.switchfully.eurder.items.domain.Currency;
-import com.switchfully.eurder.items.repository.ItemDatabase;
 import com.switchfully.eurder.items.repository.ItemRepository;
-import com.switchfully.eurder.orders.domain.ItemGroup;
+import com.switchfully.eurder.orders.domain.itemGroups.ItemGroup;
 import com.switchfully.eurder.orders.domain.Order;
 import org.springframework.stereotype.Component;
 

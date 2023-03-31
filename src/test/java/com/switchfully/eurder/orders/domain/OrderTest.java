@@ -4,13 +4,12 @@ import com.switchfully.eurder.items.domain.Currency;
 import com.switchfully.eurder.items.domain.Item;
 import com.switchfully.eurder.items.domain.Price;
 import com.switchfully.eurder.items.repository.ItemRepository;
-import org.junit.jupiter.api.AfterEach;
+import com.switchfully.eurder.orders.domain.itemGroups.ItemGroup;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.annotation.DirtiesContext;
 
 import java.util.List;
 
