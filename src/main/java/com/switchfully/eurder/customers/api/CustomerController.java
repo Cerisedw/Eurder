@@ -4,6 +4,9 @@ import com.switchfully.eurder.customers.domain.CreatingCustomer;
 import com.switchfully.eurder.customers.domain.CustomerDto;
 import com.switchfully.eurder.customers.domain.Feature;
 import com.switchfully.eurder.customers.service.CustomerService;
+import com.switchfully.eurder.orders.domain.CreatingOrder;
+import com.switchfully.eurder.orders.domain.OrderDto;
+import com.switchfully.eurder.orders.service.OrderService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,9 +17,11 @@ import java.util.List;
 @RequestMapping(value = "customers")
 public class CustomerController {
     private final CustomerService service;
+    private final OrderService orderService;
 
-    public CustomerController(CustomerService service) {
+    public CustomerController(CustomerService service, OrderService orderService) {
         this.service = service;
+        this.orderService = orderService;
     }
 
     @GetMapping(produces ="application/json")
@@ -38,7 +43,16 @@ public class CustomerController {
         service.validateAuthorization(authorizationDecoded, Feature.GET_DETAILS_CUSTOMER);
         return service.getCustomerById(id);
     }
-
+    @GetMapping(path = "/{id}/orders", produces = "application/json")
+    @ResponseStatus(HttpStatus.OK)
+    public List<OrderDto> getAllOrdersOfCustomer(@PathVariable String id){
+        return orderService.getAllOrdersFromCustomer(id);
+    }
+    @PostMapping(path = "/{id}/orders",consumes = "application/json", produces = "application/json")
+    @ResponseStatus(HttpStatus.CREATED)
+    public OrderDto createOrderForCustomer(@PathVariable String id, @RequestBody CreatingOrder creatingOrder){
+        return orderService.addOrder(id, creatingOrder);
+    }
     private String decode(String authorization) {
         String decodedAuthorization = new String(Base64.getDecoder().decode(authorization.substring("Basic ".length())));
         return decodedAuthorization.substring(0, decodedAuthorization.length() - 1);

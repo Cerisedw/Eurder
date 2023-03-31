@@ -1,10 +1,12 @@
 package com.switchfully.eurder.orders.repository;
 
+import com.switchfully.eurder.customers.exceptions.CustomerNotFoundException;
 import com.switchfully.eurder.orders.exceptions.OrderNotFoundException;
 import org.springframework.stereotype.Repository;
 import com.switchfully.eurder.orders.domain.Order;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 @Repository
@@ -17,9 +19,9 @@ public class OrderRepository {
     public List<Order> getAll(){
         return database.getOrders();
     }
-    public Order addOrder(Order item){
-        database.getOrders().add(item);
-        return item;
+    public Order addOrder(Order order){
+        database.getOrders().add(order);
+        return order;
     }
     public Order getOrderById(String id){
         long longId = Long.parseLong(id);
@@ -28,4 +30,8 @@ public class OrderRepository {
         );
     }
 
+    public List<Order> getAllFromCustomer(String idCustomer) {
+        long longIdCustomer = Long.parseLong(idCustomer);
+        return database.getOrders().stream().filter(o->o.getIdUser() == longIdCustomer).collect(Collectors.toList());
+    }
 }

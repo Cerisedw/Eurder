@@ -20,11 +20,15 @@ public class OrderService {
     public List<OrderDto> getAllOrders(){
         return mapper.listOrdersToListDto(repo.getAll());
     }
-    public OrderDto addOrder(CreatingOrder creatingOrder){
-        Order orderAdded = repo.addOrder(mapper.creatingOrderToOrder(creatingOrder));
+    public OrderDto addOrder(String id, CreatingOrder creatingOrder){
+        Order orderAdded = repo.addOrder(mapper.creatingOrderToOrder(id, creatingOrder));
         return mapper.orderToDto(orderAdded);
     }
      public OrderDto getOrderById(String id) {
         return mapper.orderToDto(repo.getOrderById(id));
+    }
+
+    public List<OrderDto> getAllOrdersFromCustomer(String id) {
+         return mapper.listOrdersToListDto(repo.getAllFromCustomer(id));
     }
 }

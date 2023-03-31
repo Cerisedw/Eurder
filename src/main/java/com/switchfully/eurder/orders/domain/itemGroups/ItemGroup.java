@@ -1,4 +1,4 @@
-package com.switchfully.eurder.orders.domain;
+package com.switchfully.eurder.orders.domain.itemGroups;
 
 import com.switchfully.eurder.items.domain.Item;
 import com.switchfully.eurder.items.domain.Price;

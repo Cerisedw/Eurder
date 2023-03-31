@@ -2,6 +2,7 @@ package com.switchfully.eurder.orders.domain;
 
 import com.switchfully.eurder.items.domain.Currency;
 import com.switchfully.eurder.items.domain.Price;
+import com.switchfully.eurder.orders.domain.itemGroups.ItemGroup;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
