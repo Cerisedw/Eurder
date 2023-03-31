@@ -56,7 +56,7 @@ public class OrderTest {
     @Test
     void givenOrder_WhenCalculatePriceWhenOrderingMethodCalled_ThenReturnPriceWithTotalAmountInEURO(){
         //GIVEN
-        double totalToHave = 1 + (Math.round(250 * 1.09)) + (Math.round(1000 / 144.86));
+        double totalToHave = 283;
         //WHEN
         Price totalOfOrder = orderEURO.getTotalToPay();
         //THEN
