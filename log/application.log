@@ -1,265 +1,101 @@
-2023-03-31T13:47:18.918+02:00  INFO 12612 --- [main] c.s.eurder.orders.domain.OrderTest       : Starting OrderTest using Java 17.0.6 with PID 12612 (started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
-2023-03-31T13:47:18.926+02:00  INFO 12612 --- [main] c.s.eurder.orders.domain.OrderTest       : No active profile set, falling back to 1 default profile: "default"
-2023-03-31T13:47:20.043+02:00  INFO 12612 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-03-31T13:47:20.101+02:00  INFO 12612 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2023-03-31T13:47:21.551+02:00  INFO 12612 --- [main] c.s.eurder.orders.domain.OrderTest       : Started OrderTest in 2.975 seconds (process running for 4.171)
-2023-03-31T13:47:56.670+02:00  INFO 9416 --- [main] c.s.eurder.orders.domain.OrderTest       : Starting OrderTest using Java 17.0.6 with PID 9416 (started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
-2023-03-31T13:47:56.671+02:00  INFO 9416 --- [main] c.s.eurder.orders.domain.OrderTest       : No active profile set, falling back to 1 default profile: "default"
-2023-03-31T13:47:57.528+02:00  INFO 9416 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-03-31T13:47:57.556+02:00  INFO 9416 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2023-03-31T13:47:58.837+02:00  INFO 9416 --- [main] c.s.eurder.orders.domain.OrderTest       : Started OrderTest in 2.479 seconds (process running for 3.513)
-2023-03-31T13:52:10.148+02:00  INFO 276 --- [main] c.s.eurder.orders.domain.OrderTest       : Starting OrderTest using Java 17.0.6 with PID 276 (started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
-2023-03-31T13:52:10.150+02:00  INFO 276 --- [main] c.s.eurder.orders.domain.OrderTest       : No active profile set, falling back to 1 default profile: "default"
-2023-03-31T13:52:10.997+02:00  INFO 276 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-03-31T13:52:11.031+02:00  INFO 276 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2023-03-31T13:52:12.343+02:00  INFO 276 --- [main] c.s.eurder.orders.domain.OrderTest       : Started OrderTest in 2.474 seconds (process running for 3.49)
-2023-03-31T13:52:38.139+02:00  INFO 11808 --- [main] c.s.eurder.orders.domain.OrderTest       : Starting OrderTest using Java 17.0.6 with PID 11808 (started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
-2023-03-31T13:52:38.144+02:00  INFO 11808 --- [main] c.s.eurder.orders.domain.OrderTest       : No active profile set, falling back to 1 default profile: "default"
-2023-03-31T13:52:45.042+02:00  INFO 11808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-03-31T13:52:45.218+02:00  INFO 11808 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2023-03-31T13:52:46.749+02:00  INFO 2056 --- [main] c.s.eurder.orders.domain.OrderTest       : Starting OrderTest using Java 17.0.6 with PID 2056 (started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
-2023-03-31T13:52:46.752+02:00  INFO 2056 --- [main] c.s.eurder.orders.domain.OrderTest       : No active profile set, falling back to 1 default profile: "default"
-2023-03-31T13:52:47.596+02:00  INFO 2056 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-03-31T13:52:47.623+02:00  INFO 2056 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2023-03-31T13:52:48.961+02:00  INFO 2056 --- [main] c.s.eurder.orders.domain.OrderTest       : Started OrderTest in 2.991 seconds (process running for 4.236)
-2023-03-31T13:53:03.688+02:00  INFO 16704 --- [main] c.s.eurder.orders.domain.OrderTest       : Starting OrderTest using Java 17.0.6 with PID 16704 (started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
-2023-03-31T13:53:03.690+02:00  INFO 16704 --- [main] c.s.eurder.orders.domain.OrderTest       : No active profile set, falling back to 1 default profile: "default"
-2023-03-31T13:53:04.670+02:00  INFO 16704 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-03-31T13:53:04.716+02:00  INFO 16704 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2023-03-31T13:53:06.246+02:00  INFO 16704 --- [main] c.s.eurder.orders.domain.OrderTest       : Started OrderTest in 2.922 seconds (process running for 4.204)
-2023-03-31T13:54:22.977+02:00  INFO 11808 --- [main] c.s.eurder.orders.domain.OrderTest       : Started OrderTest in 106.495 seconds (process running for 114.394)
-2023-03-31T13:54:30.168+02:00  INFO 1764 --- [main] c.s.eurder.orders.domain.OrderTest       : Starting OrderTest using Java 17.0.6 with PID 1764 (started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
-2023-03-31T13:54:30.169+02:00  INFO 1764 --- [main] c.s.eurder.orders.domain.OrderTest       : No active profile set, falling back to 1 default profile: "default"
-2023-03-31T13:54:30.999+02:00  INFO 1764 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-03-31T13:54:31.027+02:00  INFO 1764 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2023-03-31T13:54:32.340+02:00  INFO 1764 --- [main] c.s.eurder.orders.domain.OrderTest       : Started OrderTest in 2.497 seconds (process running for 3.579)
-2023-03-31T13:54:39.467+02:00  INFO 12884 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 12884 (C:\_development\.programs\switchfully\Örder\Eurder\target\classes started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
-2023-03-31T13:54:39.469+02:00  INFO 12884 --- [restartedMain] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-31T13:54:39.539+02:00  INFO 12884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-31T13:54:39.539+02:00  INFO 12884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-31T13:54:40.432+02:00  INFO 12884 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-03-31T13:54:40.460+02:00  INFO 12884 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2023-03-31T13:54:40.688+02:00  INFO 12884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-31T13:54:40.703+02:00  INFO 12884 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-31T13:54:40.704+02:00  INFO 12884 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-31T13:54:40.757+02:00  INFO 12884 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-31T13:54:40.758+02:00  INFO 12884 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1218 ms
-2023-03-31T13:54:41.561+02:00  INFO 12884 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-31T13:54:41.590+02:00  INFO 12884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-31T13:54:41.599+02:00  INFO 12884 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 2.511 seconds (process running for 3.112)
-2023-03-31T13:54:57.488+02:00  INFO 12884 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-31T13:54:57.488+02:00  INFO 12884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-31T13:54:57.489+02:00  INFO 12884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-31T13:54:57.800+02:00  WARN 12884 --- [http-nio-8080-exec-9] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.items.api.ItemController
-2023-03-31T13:54:57.937+02:00  WARN 12884 --- [http-nio-8080-exec-9] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.customers.api.CustomerController
-2023-03-31T13:54:57.947+02:00  WARN 12884 --- [http-nio-8080-exec-9] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.orders.api.OrderController
-2023-03-31T13:54:57.995+02:00  INFO 12884 --- [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 254 ms
-2023-03-31T14:26:16.905+02:00  INFO 12940 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 12940 (C:\_development\.programs\switchfully\Örder\Eurder\target\classes started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
-2023-03-31T14:26:16.908+02:00  INFO 12940 --- [restartedMain] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-31T14:26:16.955+02:00  INFO 12940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-31T14:26:16.955+02:00  INFO 12940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-31T14:26:18.142+02:00  INFO 12940 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-03-31T14:26:18.173+02:00  INFO 12940 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2023-03-31T14:26:18.426+02:00  INFO 12940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-31T14:26:18.433+02:00  INFO 12940 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-31T14:26:18.433+02:00  INFO 12940 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-31T14:26:18.493+02:00  INFO 12940 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-31T14:26:18.493+02:00  INFO 12940 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1537 ms
-2023-03-31T14:26:19.363+02:00  INFO 12940 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-31T14:26:19.395+02:00  INFO 12940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-31T14:26:19.405+02:00  INFO 12940 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 2.862 seconds (process running for 4.325)
-2023-03-31T14:26:36.640+02:00  INFO 12940 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-31T14:26:36.641+02:00  INFO 12940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-31T14:26:36.642+02:00  INFO 12940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-31T14:26:36.980+02:00  WARN 12940 --- [http-nio-8080-exec-5] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.items.api.ItemController
-2023-03-31T14:26:37.136+02:00  WARN 12940 --- [http-nio-8080-exec-5] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.customers.api.CustomerController
-2023-03-31T14:26:37.150+02:00  WARN 12940 --- [http-nio-8080-exec-5] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.orders.api.OrderController
-2023-03-31T14:26:37.237+02:00  INFO 12940 --- [http-nio-8080-exec-5] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 322 ms
-2023-03-31T14:34:00.410+02:00  INFO 6328 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 6328 (C:\_development\.programs\switchfully\Örder\Eurder\target\classes started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
-2023-03-31T14:34:00.412+02:00  INFO 6328 --- [restartedMain] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-31T14:34:00.447+02:00  INFO 6328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-31T14:34:00.447+02:00  INFO 6328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-31T14:34:01.111+02:00  INFO 6328 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-03-31T14:34:01.139+02:00  INFO 6328 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2023-03-31T14:34:01.345+02:00  INFO 6328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-31T14:34:01.352+02:00  INFO 6328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-31T14:34:01.352+02:00  INFO 6328 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-31T14:34:01.404+02:00  INFO 6328 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-31T14:34:01.405+02:00  INFO 6328 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 956 ms
-2023-03-31T14:34:02.137+02:00  INFO 6328 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-31T14:34:02.169+02:00  INFO 6328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-31T14:34:02.178+02:00  INFO 6328 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 2.098 seconds (process running for 2.614)
-2023-03-31T14:34:48.030+02:00  INFO 17148 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 17148 (C:\_development\.programs\switchfully\Örder\Eurder\target\classes started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
-2023-03-31T14:34:48.033+02:00  INFO 17148 --- [restartedMain] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-31T14:34:48.071+02:00  INFO 17148 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-31T14:34:48.071+02:00  INFO 17148 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-31T14:34:48.713+02:00  INFO 17148 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-03-31T14:34:48.739+02:00  INFO 17148 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2023-03-31T14:34:48.959+02:00  INFO 17148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-31T14:34:48.966+02:00  INFO 17148 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-31T14:34:48.966+02:00  INFO 17148 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-31T14:34:49.020+02:00  INFO 17148 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-31T14:34:49.021+02:00  INFO 17148 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 948 ms
-2023-03-31T14:34:49.779+02:00  INFO 17148 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-31T14:34:49.808+02:00  INFO 17148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-31T14:34:49.816+02:00  INFO 17148 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 2.124 seconds (process running for 2.844)
-2023-03-31T14:34:54.877+02:00  INFO 17148 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-31T14:34:54.877+02:00  INFO 17148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-31T14:34:54.878+02:00  INFO 17148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-31T14:34:55.075+02:00  WARN 17148 --- [http-nio-8080-exec-4] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.items.api.ItemController
-2023-03-31T14:34:55.209+02:00  WARN 17148 --- [http-nio-8080-exec-4] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.customers.api.CustomerController
-2023-03-31T14:34:55.243+02:00  WARN 17148 --- [http-nio-8080-exec-4] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.orders.api.OrderController
-2023-03-31T14:34:55.285+02:00  INFO 17148 --- [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 263 ms
-2023-03-31T14:36:39.384+02:00 ERROR 17148 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class com.switchfully.eurder.orders.domain.itemGroups.ItemGroup]] with root cause
-
-com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.switchfully.eurder.orders.domain.itemGroups.ItemGroup` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
- at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 4, column: 7] (through reference chain: com.switchfully.eurder.orders.domain.CreatingOrder["itemGroupList"]->java.util.ArrayList[0])
-	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67) ~[jackson-databind-2.14.2.jar:2.14.2]
-	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1909) ~[jackson-databind-2.14.2.jar:2.14.2]
-	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:408) ~[jackson-databind-2.14.2.jar:2.14.2]
-	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1354) ~[jackson-databind-2.14.2.jar:2.14.2]
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1420) ~[jackson-databind-2.14.2.jar:2.14.2]
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:352) ~[jackson-databind-2.14.2.jar:2.14.2]
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:185) ~[jackson-databind-2.14.2.jar:2.14.2]
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:359) ~[jackson-databind-2.14.2.jar:2.14.2]
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244) ~[jackson-databind-2.14.2.jar:2.14.2]
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28) ~[jackson-databind-2.14.2.jar:2.14.2]
-	at com.fasterxml.jackson.databind.deser.SettableBeanProperty.deserialize(SettableBeanProperty.java:542) ~[jackson-databind-2.14.2.jar:2.14.2]
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeWithErrorWrapping(BeanDeserializer.java:564) ~[jackson-databind-2.14.2.jar:2.14.2]
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeUsingPropertyBased(BeanDeserializer.java:439) ~[jackson-databind-2.14.2.jar:2.14.2]
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1405) ~[jackson-databind-2.14.2.jar:2.14.2]
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:352) ~[jackson-databind-2.14.2.jar:2.14.2]
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:185) ~[jackson-databind-2.14.2.jar:2.14.2]
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323) ~[jackson-databind-2.14.2.jar:2.14.2]
-	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2105) ~[jackson-databind-2.14.2.jar:2.14.2]
-	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1481) ~[jackson-databind-2.14.2.jar:2.14.2]
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:395) ~[spring-web-6.0.7.jar:6.0.7]
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:354) ~[spring-web-6.0.7.jar:6.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:183) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:163) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:136) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.0.7.jar:6.0.7]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:181) ~[spring-web-6.0.7.jar:6.0.7]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:148) ~[spring-web-6.0.7.jar:6.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:563) ~[tomcat-embed-core-10.1.7.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631) ~[tomcat-embed-core-10.1.7.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.7.jar:6.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.7.jar:6.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.7.jar:6.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-
-2023-03-31T14:43:22.253+02:00  INFO 8 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 8 (C:\_development\.programs\switchfully\Örder\Eurder\target\classes started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
-2023-03-31T14:43:22.256+02:00  INFO 8 --- [restartedMain] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-31T14:43:22.294+02:00  INFO 8 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-31T14:43:22.294+02:00  INFO 8 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-31T14:43:23.221+02:00  INFO 8 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-03-31T14:43:23.249+02:00  INFO 8 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2023-03-31T14:43:23.464+02:00  INFO 8 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-31T14:43:23.471+02:00  INFO 8 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-31T14:43:23.472+02:00  INFO 8 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-31T14:43:23.530+02:00  INFO 8 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-31T14:43:23.530+02:00  INFO 8 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1235 ms
-2023-03-31T14:43:24.385+02:00  INFO 8 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-31T14:43:24.417+02:00  INFO 8 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-31T14:43:24.425+02:00  INFO 8 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 2.529 seconds (process running for 3.486)
-2023-03-31T14:43:30.571+02:00  INFO 8 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-31T14:43:30.571+02:00  INFO 8 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-31T14:43:30.572+02:00  INFO 8 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-31T14:43:30.773+02:00  WARN 8 --- [http-nio-8080-exec-3] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.items.api.ItemController
-2023-03-31T14:43:30.912+02:00  WARN 8 --- [http-nio-8080-exec-3] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.customers.api.CustomerController
-2023-03-31T14:43:30.948+02:00  WARN 8 --- [http-nio-8080-exec-3] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.orders.api.OrderController
-2023-03-31T14:43:30.989+02:00  INFO 8 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 268 ms
-2023-03-31T14:48:37.372+02:00  INFO 1248 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 1248 (C:\_development\.programs\switchfully\Örder\Eurder\target\classes started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
-2023-03-31T14:48:37.375+02:00  INFO 1248 --- [restartedMain] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-31T14:48:37.413+02:00  INFO 1248 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-31T14:48:37.413+02:00  INFO 1248 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-31T14:48:38.066+02:00  INFO 1248 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-03-31T14:48:38.092+02:00  INFO 1248 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2023-03-31T14:48:38.298+02:00  INFO 1248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-31T14:48:38.311+02:00  INFO 1248 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-31T14:48:38.311+02:00  INFO 1248 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-31T14:48:38.365+02:00  INFO 1248 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-31T14:48:38.365+02:00  INFO 1248 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 951 ms
-2023-03-31T14:48:39.209+02:00  INFO 1248 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-31T14:48:39.237+02:00  INFO 1248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-31T14:48:39.246+02:00  INFO 1248 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 2.2 seconds (process running for 2.846)
-2023-03-31T14:48:46.829+02:00  INFO 1248 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-31T14:48:46.829+02:00  INFO 1248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-31T14:48:46.830+02:00  INFO 1248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-31T14:48:46.982+02:00  WARN 1248 --- [http-nio-8080-exec-3] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.items.api.ItemController
-2023-03-31T14:48:47.121+02:00  WARN 1248 --- [http-nio-8080-exec-3] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.customers.api.CustomerController
-2023-03-31T14:48:47.151+02:00  WARN 1248 --- [http-nio-8080-exec-3] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.orders.api.OrderController
-2023-03-31T14:48:47.185+02:00  INFO 1248 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 258 ms
-2023-03-31T14:55:36.191+02:00  INFO 4084 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 4084 (C:\_development\.programs\switchfully\Örder\Eurder\target\classes started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
-2023-03-31T14:55:36.193+02:00  INFO 4084 --- [restartedMain] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-31T14:55:36.235+02:00  INFO 4084 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-31T14:55:36.235+02:00  INFO 4084 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-31T14:55:37.024+02:00  INFO 4084 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-03-31T14:55:37.053+02:00  INFO 4084 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2023-03-31T14:55:37.285+02:00  INFO 4084 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-31T14:55:37.298+02:00  INFO 4084 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-31T14:55:37.298+02:00  INFO 4084 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-31T14:55:37.358+02:00  INFO 4084 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-31T14:55:37.359+02:00  INFO 4084 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1123 ms
-2023-03-31T14:55:38.188+02:00  INFO 4084 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-31T14:55:38.220+02:00  INFO 4084 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-31T14:55:38.231+02:00  INFO 4084 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 2.407 seconds (process running for 2.993)
-2023-03-31T15:14:54.663+02:00  INFO 8908 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 8908 (C:\_development\.programs\switchfully\Örder\Eurder\target\classes started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
-2023-03-31T15:14:54.665+02:00  INFO 8908 --- [restartedMain] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-31T15:14:54.704+02:00  INFO 8908 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-31T15:14:54.704+02:00  INFO 8908 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-31T15:14:55.489+02:00  INFO 8908 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-03-31T15:14:55.517+02:00  INFO 8908 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2023-03-31T15:14:55.754+02:00  INFO 8908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-31T15:14:55.762+02:00  INFO 8908 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-31T15:14:55.763+02:00  INFO 8908 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-31T15:14:55.825+02:00  INFO 8908 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-31T15:14:55.826+02:00  INFO 8908 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1122 ms
-2023-03-31T15:14:56.651+02:00  INFO 8908 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-31T15:14:56.680+02:00  INFO 8908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-31T15:14:56.689+02:00  INFO 8908 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 2.373 seconds (process running for 2.923)
-2023-03-31T15:15:15.583+02:00  INFO 8908 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-31T15:15:15.583+02:00  INFO 8908 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-31T15:15:15.584+02:00  INFO 8908 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2023-03-31T15:15:15.759+02:00  WARN 8908 --- [http-nio-8080-exec-4] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.items.api.ItemController
-2023-03-31T15:15:15.908+02:00  WARN 8908 --- [http-nio-8080-exec-4] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.customers.api.CustomerController
-2023-03-31T15:15:15.947+02:00  WARN 8908 --- [http-nio-8080-exec-4] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.orders.api.OrderController
-2023-03-31T15:15:15.990+02:00  INFO 8908 --- [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 291 ms
+2023-04-03T09:21:40.280+02:00  INFO 16552 --- [main] c.s.eurder.items.domain.ItemMapperTest   : Starting ItemMapperTest using Java 17.0.6 with PID 16552 (started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
+2023-04-03T09:21:40.290+02:00  INFO 16552 --- [main] c.s.eurder.items.domain.ItemMapperTest   : No active profile set, falling back to 1 default profile: "default"
+2023-04-03T09:21:42.377+02:00  INFO 16552 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-03T09:21:42.446+02:00  INFO 16552 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-03T09:21:44.428+02:00  INFO 16552 --- [main] c.s.eurder.items.domain.ItemMapperTest   : Started ItemMapperTest in 4.525 seconds (process running for 6.566)
+2023-04-03T09:21:45.207+02:00  INFO 16552 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.switchfully.eurder.items.service.ItemServiceTest]: ItemServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-04-03T09:21:45.222+02:00  INFO 16552 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.switchfully.eurder.EurderApplication for test class com.switchfully.eurder.items.service.ItemServiceTest
+2023-04-03T09:21:45.263+02:00  INFO 16552 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.switchfully.eurder.items.repository.ItemDataBaseTest]: ItemDataBaseTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-04-03T09:21:45.281+02:00  INFO 16552 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.switchfully.eurder.EurderApplication for test class com.switchfully.eurder.items.repository.ItemDataBaseTest
+2023-04-03T09:21:45.293+02:00  INFO 16552 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.switchfully.eurder.items.repository.ItemRepositoryTest]: ItemRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-04-03T09:21:45.296+02:00  INFO 16552 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.switchfully.eurder.EurderApplication for test class com.switchfully.eurder.items.repository.ItemRepositoryTest
+2023-04-03T09:21:45.337+02:00  INFO 16552 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.switchfully.eurder.items.api.ItemControllerTest]: ItemControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-04-03T09:21:45.350+02:00  INFO 16552 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.switchfully.eurder.EurderApplication for test class com.switchfully.eurder.items.api.ItemControllerTest
+2023-04-03T09:21:45.366+02:00 ERROR 16552 --- [main] c.s.e.i.e.ItemNotFoundException          : Item not found Item with 15545658 id doesn't exist
+2023-04-03T09:21:45.376+02:00 ERROR 16552 --- [main] c.s.e.c.e.CustomerNotFoundException      : Customer 2 does not have access to ADD_ITEM
+2023-04-03T09:22:41.835+02:00  INFO 1940 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 1940 (C:\_development\.programs\switchfully\Örder\Eurder\target\classes started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
+2023-04-03T09:22:41.837+02:00  INFO 1940 --- [restartedMain] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-03T09:22:41.887+02:00  INFO 1940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-03T09:22:41.887+02:00  INFO 1940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-03T09:22:42.821+02:00  INFO 1940 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-03T09:22:42.860+02:00  INFO 1940 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-03T09:22:43.180+02:00  INFO 1940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-03T09:22:43.193+02:00  INFO 1940 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-03T09:22:43.194+02:00  INFO 1940 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-03T09:22:43.249+02:00  INFO 1940 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-03T09:22:43.249+02:00  INFO 1940 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1361 ms
+2023-04-03T09:22:44.714+02:00  INFO 1940 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03T09:22:44.771+02:00  INFO 1940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-03T09:22:44.788+02:00  INFO 1940 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 3.367 seconds (process running for 4.066)
+2023-04-03T09:22:45.193+02:00  INFO 1940 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03T09:22:45.194+02:00  INFO 1940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-03T09:22:45.197+02:00  INFO 1940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-04-03T09:22:45.681+02:00  WARN 1940 --- [http-nio-8080-exec-9] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.items.api.ItemController
+2023-04-03T09:22:45.887+02:00  WARN 1940 --- [http-nio-8080-exec-9] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.customers.api.CustomerController
+2023-04-03T09:22:45.990+02:00  WARN 1940 --- [http-nio-8080-exec-9] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.orders.api.OrderController
+2023-04-03T09:22:46.069+02:00  INFO 1940 --- [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 491 ms
+2023-04-03T10:38:41.401+02:00  INFO 12372 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 12372 (C:\_development\.programs\switchfully\Örder\Eurder\target\classes started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
+2023-04-03T10:38:41.405+02:00  INFO 12372 --- [restartedMain] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-03T10:38:41.475+02:00  INFO 12372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-03T10:38:41.475+02:00  INFO 12372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-03T10:38:42.682+02:00  INFO 12372 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-03T10:38:42.713+02:00  INFO 12372 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-03T10:38:42.946+02:00  INFO 12372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-03T10:38:42.953+02:00  INFO 12372 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-03T10:38:42.954+02:00  INFO 12372 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-03T10:38:43.018+02:00  INFO 12372 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-03T10:38:43.018+02:00  INFO 12372 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1543 ms
+2023-04-03T10:38:43.855+02:00  INFO 12372 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03T10:38:43.881+02:00  INFO 12372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-03T10:38:43.889+02:00  INFO 12372 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 3.036 seconds (process running for 4.005)
+2023-04-03T10:38:45.397+02:00  INFO 12372 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03T10:38:45.398+02:00  INFO 12372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-03T10:38:45.399+02:00  INFO 12372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-03T10:38:45.699+02:00  WARN 12372 --- [http-nio-8080-exec-5] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.items.api.ItemController
+2023-04-03T10:38:45.844+02:00  WARN 12372 --- [http-nio-8080-exec-5] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.customers.api.CustomerController
+2023-04-03T10:38:45.880+02:00  WARN 12372 --- [http-nio-8080-exec-5] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.orders.api.OrderController
+2023-04-03T10:38:45.927+02:00  INFO 12372 --- [http-nio-8080-exec-5] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 294 ms
+2023-04-03T10:41:30.819+02:00  INFO 5664 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 5664 (C:\_development\.programs\switchfully\Örder\Eurder\target\classes started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
+2023-04-03T10:41:30.822+02:00  INFO 5664 --- [restartedMain] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-03T10:41:30.886+02:00  INFO 5664 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-03T10:41:30.887+02:00  INFO 5664 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-03T10:41:32.417+02:00  INFO 5664 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-03T10:41:32.480+02:00  INFO 5664 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-03T10:41:32.897+02:00  INFO 5664 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-03T10:41:32.916+02:00  INFO 5664 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-03T10:41:32.917+02:00  INFO 5664 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-03T10:41:33.012+02:00  INFO 5664 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-03T10:41:33.012+02:00  INFO 5664 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2124 ms
+2023-04-03T10:41:34.178+02:00  INFO 5664 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03T10:41:34.211+02:00  INFO 5664 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-03T10:41:34.222+02:00  INFO 5664 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 3.952 seconds (process running for 4.834)
+2023-04-03T10:42:51.661+02:00  INFO 5664 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03T10:42:51.662+02:00  INFO 5664 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-03T10:42:51.663+02:00  INFO 5664 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-03T10:42:52.008+02:00  WARN 5664 --- [http-nio-8080-exec-4] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.items.api.ItemController
+2023-04-03T10:42:52.210+02:00  WARN 5664 --- [http-nio-8080-exec-4] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.customers.api.CustomerController
+2023-04-03T10:42:52.261+02:00  WARN 5664 --- [http-nio-8080-exec-4] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.orders.api.OrderController
+2023-04-03T10:42:52.322+02:00  INFO 5664 --- [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 386 ms
+2023-04-03T10:43:30.045+02:00  INFO 19068 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 19068 (C:\_development\.programs\switchfully\Örder\Eurder\target\classes started by cdewanne in C:\_development\.programs\switchfully\Örder\Eurder)
+2023-04-03T10:43:30.048+02:00  INFO 19068 --- [restartedMain] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-03T10:43:30.098+02:00  INFO 19068 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-03T10:43:30.099+02:00  INFO 19068 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-03T10:43:30.899+02:00  INFO 19068 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-03T10:43:30.929+02:00  INFO 19068 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-03T10:43:31.192+02:00  INFO 19068 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-03T10:43:31.202+02:00  INFO 19068 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-03T10:43:31.202+02:00  INFO 19068 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-03T10:43:31.271+02:00  INFO 19068 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-03T10:43:31.271+02:00  INFO 19068 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1172 ms
+2023-04-03T10:43:32.332+02:00  INFO 19068 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03T10:43:32.365+02:00  INFO 19068 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-03T10:43:32.375+02:00  INFO 19068 --- [restartedMain] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 2.832 seconds (process running for 3.614)
+2023-04-03T10:43:36.311+02:00  INFO 19068 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03T10:43:36.311+02:00  INFO 19068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-03T10:43:36.312+02:00  INFO 19068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-03T10:43:36.651+02:00  WARN 19068 --- [http-nio-8080-exec-5] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.items.api.ItemController
+2023-04-03T10:43:36.824+02:00  WARN 19068 --- [http-nio-8080-exec-5] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.customers.api.CustomerController
+2023-04-03T10:43:36.872+02:00  WARN 19068 --- [http-nio-8080-exec-5] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.switchfully.eurder.orders.api.OrderController
+2023-04-03T10:43:36.935+02:00  INFO 19068 --- [http-nio-8080-exec-5] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 353 ms
+2023-04-03T10:43:41.896+02:00 ERROR 19068 --- [http-nio-8080-exec-7] c.s.e.c.e.CustomerIdNotRightException    : Customer Basic Mjo= is not the right customer to do that
+2023-04-03T10:43:41.900+02:00  WARN 19068 --- [http-nio-8080-exec-7] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [com.switchfully.eurder.customers.exceptions.CustomerIdNotRightException: Customer Basic Mjo= is not the right customer to do that]
