@@ -1,6 +1,7 @@
 package com.switchfully.eurder.customers.service;
 
 import com.switchfully.eurder.customers.domain.*;
+import com.switchfully.eurder.customers.exceptions.CustomerIdNotRightException;
 import com.switchfully.eurder.customers.exceptions.CustomerNotFoundException;
 import com.switchfully.eurder.customers.exceptions.UnauthorizatedException;
 import com.switchfully.eurder.customers.repository.CustomerRepository;
@@ -39,6 +40,9 @@ public class CustomerService {
         }catch(CustomerNotFoundException e){
             throw new CustomerNotFoundException(authorization);
         }
+    }
+    public void validateIfUserIdIsTheSameAsIdUrl(String idUrl, String authorization){
+            if(!idUrl.equals(authorization)) throw new CustomerIdNotRightException(authorization);
     }
 
 }
